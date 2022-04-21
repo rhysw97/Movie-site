@@ -1,0 +1,20 @@
+You have been tasked with building a prototype responsive movie review website.
+
+Using the target image files as a reference, and the specification below, build the prototype website using relevant CSS techniques (including CSS grid and flexbox) so that it displays accurately across desktop, tablet and mobile devices.
+
+The website should be responsive across all devices, however your media query breakpoints will be tested on the following viewport widths:
+
+* Standard resolution mobile. Portrait - viewport width of up to (and including) 480px.
+* Large mobile/tablet. Portrait - viewport width between 481px and 1024px.
+* Tablet/laptop. Landscape - viewport width of 1025px and above.
+
+Specifications:
+
+1. The maximum width of the inner container should be constrained to 1280px. The main header should always take up the full width of the page.
+2. The desktop version (1025px and above) should show items in a grid of 1 column on the left, with 2 columns on the right. The larger column on the left should be 2x the size of a single column on the right.
+3. The mobile / tablet version (between 481px and 1024px) should show items in a grid of 1 column on the left, with 1 column on the right. The larger column on the left sould be 2x the size of the single column on the right.
+4. The mobile version (up to and including 480px) should show one column of items in a grid, the search bar and nav in the menu should be hidden, and the mobile 'Menu' shown on the right instead.
+5. Image sizes are *not* specified, as these shall be determined by the size of their containers, but should be equal / relative to each other where neccessary.
+6. 20px should be used for all padding and gaps.
+7. The css colour 'dodgerblue' should be used for the header colour.
+8. Box shadows are 4px rgba(0,0,0,0.2), offset 2,2px for main items, and 0,0px for the header.

@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background: #eee;
+}
+
+.btn {
+    display: inline-block;
+    background: dodgerblue;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+/* -- Please do not edit above this line, add your styles below and in responsive.css -- */
+header {
+    /*sets bacground and text colour of header*/
+    background: dodgerblue;
+    color: #eee;
+    /*uses flex which will place all children in a row by default
+    and then */
+    display: flex;
+    justify-content: space-between;
+    /*adds 20px of padding to all sides of nav-bar*/
+    padding: 20px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+   
+}
+
+/*sets input and nav-bar to not display (Mobile First)*/
+input, .nav-bar {
+    display: none;
+}
+
+/*centers Menu text verically */
+.menu {
+    margin: auto 0;
+}
+
+/*sets the main tag to be a grid with 1 column and 
+a gap between each grid cell 20px wide*/
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px; 
+    margin-bottom: 20px;
+}
+
+/* turns section elements into a flex container and displays children in
+a column (these are the containers for the each movie)*/
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+   
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.flex-container {
+    display: flex;
+    flex: 2 1 auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-container article {
+    padding-bottom: 20px;
+    flex-basis: 130px;
+}
+
+.more-info {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+   margin-left: auto;
+ }
+
+.avengers{
+    padding: 0;
+    border: none;
+}
+
+.avengers .flex-container {
+    padding: 20px;
+    box-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}

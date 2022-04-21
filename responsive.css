@@ -1,0 +1,102 @@
+/*Styling for screen  widths from 481px to 1024px*/
+@media screen and (min-width: 481px) /*and (max-width: 1024px)*/ {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .avengers {
+        grid-column: 1 / 3;  
+    }
+}
+
+@media screen and (min-width: 1025px)  {
+
+    header {
+        display: flex;
+        background-color: dodgerblue;
+        color: #fff;
+        padding: 20px 0;
+        margin-bottom: 20px;
+        
+    }
+    
+    .header-element {
+        flex-basis: 33.3%;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+    }
+
+    input {
+        width: 60%;
+        font-size: large;
+        font-weight: 500;
+        padding-left: 20px;
+        border: none;
+        
+    }
+
+    input, .nav-bar {
+        display: block;
+    }
+    
+    .nav-bar ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        height: 100%;
+        padding-top: 10px;
+        margin-left: auto;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    h1 {
+        padding-left: 20px ;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+        padding-right: 20px;
+    }
+
+    main{
+        grid-template-columns: 2fr repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .avengers {
+        grid-column: 1 / 1;
+        grid-row: 1 / 4;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lone-gunmen {
+
+        padding: 20px;
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .millennium {
+        padding: 20px;
+        grid-area: 1 / 3 / 2 / 4
+    }
+    
+    .predators {
+    
+        
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    
+    .rage {
+      
+        grid-area: 3 / 3 / 4 / 3;
+    }
+}
+    

@@ -1,0 +1,125 @@
+
+header {
+    display: flex;
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    
+}
+
+.header-element {
+    flex-basis: 33.3%;
+}
+form {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 60%;
+   
+    font-size: large;
+    font-weight: 500;
+    padding-left: 20px;
+    
+}
+
+input, .nav-bar {
+    display: block;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    height: 100%;
+    padding-top: 10px;
+    margin-left: auto;
+}
+
+
+
+ .menu {
+     display: none;
+ }
+
+ h1 {
+    padding-left: 20px ;
+ }
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+input::placeholder {
+    padding: 20px;
+}
+
+/* Main Content*/
+main {
+    max-width: 1280px;
+    display: grid;
+    max-height: 100vh;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    margin: 0 auto;
+    max-height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+
+}
+
+
+
+
+
+section div {
+    padding: 20px;
+}
+
+.lone-gunmen {
+
+    padding: 20px;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.millennium {
+    padding: 20px;
+    grid-area: 1 / 3 / 2 / 4
+}
+
+.predators {
+
+    padding: 20px;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.rage {
+    padding: 20px;
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
